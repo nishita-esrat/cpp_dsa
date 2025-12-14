@@ -3,9 +3,9 @@
 using namespace std;
 
 // Function declarations
-void increasing_oder_sort(int arr[], int n);
-void increasing_oder_but_start_from_last_sort(int arr[], int n);
-void decreasing_oder_sort(int arr[], int n);
+void increasing_order_sort(int arr[], int n);
+void increasing_order_but_start_from_last_sort(int arr[], int n);
+void decreasing_order_sort(int arr[], int n);
 
 int main()
 {
@@ -27,17 +27,17 @@ int main()
 
     if (choice == 1)
     {
-        increasing_oder_sort(arr, n);
+        increasing_order_sort(arr, n);
         cout << "Array sorted using Selection sort(increasing order ): ";
     }
     else if (choice == 2)
     {
-        decreasing_oder_sort(arr, n);
+        decreasing_order_sort(arr, n);
         cout << "Array sorted using Selection Sort (decreasing order): ";
     }
     else if (choice == 3)
     {
-        increasing_oder_but_start_from_last_sort(arr, n);
+        increasing_order_but_start_from_last_sort(arr, n);
         cout << "Array sorted using Selection sort (increasing order but from last ): ";
     }
     else
@@ -55,7 +55,7 @@ int main()
 }
 
 // Selection Sort Function (increasing oder)
-void increasing_oder_sort(int arr[], int n)
+void increasing_order_sort(int arr[], int n)
 {
     int index;
     for (int i = 0; i < n - 1; i++)
@@ -73,7 +73,7 @@ void increasing_oder_sort(int arr[], int n)
 }
 
 // Selection Sort Function (increasing oder but from last)
-void increasing_oder_but_start_from_last_sort(int arr[], int n)
+void increasing_order_but_start_from_last_sort(int arr[], int n)
 {
     int index;
     for (int i = n - 1; i > 0; i--)
@@ -91,7 +91,7 @@ void increasing_oder_but_start_from_last_sort(int arr[], int n)
     }
 }
 // Selection Sort Function (decreasing oder)
-void decreasing_oder_sort(int arr[], int n)
+void decreasing_order_sort(int arr[], int n)
 {
     int index;
 
